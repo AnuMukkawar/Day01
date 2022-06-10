@@ -12,7 +12,7 @@ Statically-Typed Languages-
         One great thing about statically-typed languages is that we’ll be able to fix a lot of errors even before running the program. Once we successfully compile the program, we don’t need to worry about any kinds of syntax errors. The code will be ready to be executed.
         Now the code is almost done, and the compiler knows what each data type is. Hence, it can produce an optimized machine code that uses less memory. So, the execution of the code will be faster compared to the dynamically-typed languages. These are the main advantages of statically-typed languages.
         
-Dynamically-typed Languages
+Dynamically-typed Languages-
         We call a language “dynamically typed” if type checking takes place while the program runs (run-time). In this type of language, there is no need to specify the data type of each variable while writing code.
         It means that you can write pretty quickly since you do not have to specify types every time. Some languages do allow you to provide type information but do not require it.
         Most modern programming languages are dynamically typed. Some examples of dynamically-typed languages are Python, Javascript, Ruby, Perl, PHP, R, Dart, Lua, Objective-C, etc.
