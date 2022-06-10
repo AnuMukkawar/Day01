@@ -1,6 +1,6 @@
 # Day01
 
-Q. What is the difference between statically typed and dynamically typed languages?
+Q1. What is the difference between statically typed and dynamically typed languages?
 
 Ans:
 A programming language is statically typed if the type of a variable is known at compile time. A language is dynamically typed if the type of a variable is checked during run-time.
@@ -25,7 +25,7 @@ Statically typed languages have better performance at run-time and are faster at
 But dynamically-typed languages are comparatively faster during development time and are more flexible.
 
 
-Q Scripting Language vs Programming Language
+Q2. Scripting Language vs Programming Language
 Ans:
 
 Scripting languages are programming languages that don't require an explicit compilation step.
@@ -43,4 +43,55 @@ C,C++,D
 Java (but note that Java is compiled to bytecode, which is then interpreted and/or recompiled at runtime)
 Pascal and then you have things like Python that sit in both camps: Python is widely used without a compilation step, but the main implementation (CPython) does that by compiling to bytecode on-the-fly and then running the bytecode in a VM, and it can write that bytecode out to files (.pyc, .pyo) for use without recompiling.
 
+Q3. Programming Paradigms
 
+Ans:
+A programming paradigm is a style, or “way,” of programming.
+Some common programming paradig-
+Imperative: Programming with an explicit sequence of commands that update state.
+Declarative: Programming by specifying the result you want, not how to get it.
+Structured: Programming with clean, goto-free, nested control structures.
+Procedural: Imperative programming with procedure calls.
+Functional (Applicative): Programming with function calls that avoid any global state.
+Function-Level (Combinator): Programming with no variables at all.
+Object-Oriented: Programming by defining objects that send messages to each other. Objects have their own internal (encapsulated) state and public interfaces. Object orientation can be:
+Class-based: Objects get state and behavior based on membership in a class.
+Prototype-based: Objects get behavior from a prototype object.
+Event-Driven: Programming with emitters and listeners of asynchronous actions.
+Flow-Driven: Programming processes communicating with each other over predefined channels.
+Logic (Rule-based): Programming by specifying a set of facts and rules. An engine infers the answers to questions.
+Constraint: Programming by specifying a set of constraints. An engine finds the values that meet the constraints.
+Aspect-Oriented: Programming cross-cutting concerns applied transparently.
+Reflective: Programming by manipulating the program elements themselves.
+Array: Programming with powerful array operators that usually make loops unnecessary.
+
+Imperative Programming- 
+Control flow in imperative programming is explicit: commands show how the computation takes place, step by step. Each step affects the global state of the computation.
+
+Structured Programming-
+Structured programming is a kind of imperative programming where control flow is defined by nested loops, conditionals, and subroutines, rather than via gotos. Variables are generally local to blocks (have lexical scope).
+
+Object Oriented Programming-
+OOP is based on the sending of messages to objects. Objects respond to messages by performing operations, generally called methods. Messages can have arguments. A society of objects, each with their own local memory and own set of operations has a different feel than the monolithic processor and single shared memory feel of non object oriented languages.
+
+One of the more visible aspects of the more pure-ish OO languages is that conditionals and loops become messages themselves, whose arguments are often blocks of executable code. 
+
+Declarative Programming-
+Control flow in declarative programming is implicit: the programmer states only what the result should look like, not how to obtain it.
+No loops, no assignments, etc. Whatever engine that interprets this code is just supposed go get the desired information, and can use whatever approach it wants. (The logic and constraint paradigms are generally declarative as well.)
+
+Functional Programming-
+In functional programming, control flow is expressed by combining function calls, rather than by assigning values to variables:
+
+Logic and Constraint Programming-
+Logic programming and constraint programming are two paradigms in which programs are built by setting up relations that specify facts and inference rules, and asking whether or not something is true (i.e. specifying a goal.) Unification and backtracking to find solutions (i.e.. satisfy goals) takes place automatically.
+
+Languages that emphasize this paradigm: Prolog, GHC, Parlog, Vulcan, Polka, Mercury, Fnil.
+
+Languages and Paradigms
+One of the characteristics of a language is its support for particular programming paradigms. For example, Smalltalk has direct support for programming in the object-oriented way, so it might be called an object-oriented language. OCaml, Lisp, Scheme, and JavaScript programs tend to make heavy use of passing functions around so they are called “functional languages” despite having variables and many imperative constructs.
+
+There are two very important observations here:
+
+Very few languages implement a paradigm 100%. When they do, they are pure. It is incredibly rare to have a “pure OOP” language or a “pure functional” language. A lot of languages have a few escapes; for example in OCaml, you will program with functions 90% or more of the time, but if you need state, you can get it. Another example: very few languages implement OOP the way Alan Kay envisioned it.
+A lot of languages will facilitate programming in one or more paradigms. In Scala you can do imperative, object-oriented, and functional programming quite easily. If a language is purposely designed to allow programming in many paradigms is called a multi-paradigm language. If a language only accidentally supports multiple paradigms, we don’t have a special word for that.
